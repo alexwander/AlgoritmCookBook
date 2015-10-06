@@ -22,7 +22,7 @@ public class conn {
 
 		try {
 			conn = DriverManager.getConnection(
-					"jdbc:mysql://localhost:3306/picturesquirrel", "root", "sasasa1122");
+					"jdbc:mysql://localhost:3306/db", "root", "1122");
 		} catch (SQLException e) {
 			System.out.println("Can't connect to database.");
 			return;

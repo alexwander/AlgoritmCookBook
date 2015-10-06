@@ -12,20 +12,21 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class Controller
+ *  Controller
  */
+
 public class Controller extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
-	
+
+
 	private Map<String, String> actionMap = new HashMap<>();
-	
-	
+
+
     /**
      * @see HttpServlet#HttpServlet()
      */
     public Controller() {
-    	// Build a Map of action parameters to pages
+    	// Build a Map of action parameters to pages ??
 
     			actionMap.put("image", "/image.jsp");
     			actionMap.put("rate", "/image.jsp");
@@ -73,6 +74,8 @@ public class Controller extends HttpServlet {
 			HttpServletResponse response) throws ServletException, IOException {
 
 		doForward(request, response);
+
+
 	}
 
 }
